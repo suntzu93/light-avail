@@ -3,7 +3,7 @@
 # Start new tmux session named 'monitor'
 tmux new-session -d -s monitor
 
-curl -sLO https://raw.githubusercontent.com/suntzu93/light_moon/main/start_light.sh
+curl -sLO https://raw.githubusercontent.com/suntzu93/light_avail/main/start_light.sh
 chmod +x ./start_light.sh
 
 # Run check_light.sh inside the 'monitor' tmux session
