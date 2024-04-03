@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if tmux has-session -t monitor 2>/dev/null; then
+    # If session 'monitor' exists, kill it
+    tmux kill-session -t monitor
+fi
+
 # Start new tmux session named 'monitor'
 tmux new-session -d -s monitor
 
